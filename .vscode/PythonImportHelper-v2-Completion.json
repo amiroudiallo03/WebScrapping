@@ -1,0 +1,73 @@
+[
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "url",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "url = \"https://www.worldfootball.net\"\n#url = \"https://www.vice.com/fr\"\n#response = requests.get(url)\n#soup = BeautifulSoup(response.text, 'html.parser')\n#dic = {}\n# article = soup.find('div', {'class': 'vice-\n# '})\n# for i in article:\n#     # lien_div = article.find('div', {'class': 'vice-card-rubric vice-card-rubric--dark vice-card__vice-card-rubric'})\n#     # lien = lien_div.find('a')",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "#url",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "#url = \"https://www.vice.com/fr\"\n#response = requests.get(url)\n#soup = BeautifulSoup(response.text, 'html.parser')\n#dic = {}\n# article = soup.find('div', {'class': 'vice-\n# '})\n# for i in article:\n#     # lien_div = article.find('div', {'class': 'vice-card-rubric vice-card-rubric--dark vice-card__vice-card-rubric'})\n#     # lien = lien_div.find('a')\n#     paragraphe = i.find('p', {'class': 'vice-card-dek vice-card-dek--dark vice-card__vice-card-dek'})",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "#response",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "#response = requests.get(url)\n#soup = BeautifulSoup(response.text, 'html.parser')\n#dic = {}\n# article = soup.find('div', {'class': 'vice-\n# '})\n# for i in article:\n#     # lien_div = article.find('div', {'class': 'vice-card-rubric vice-card-rubric--dark vice-card__vice-card-rubric'})\n#     # lien = lien_div.find('a')\n#     paragraphe = i.find('p', {'class': 'vice-card-dek vice-card-dek--dark vice-card__vice-card-dek'})\n#     titre = i.find('h3')",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "#soup",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "#soup = BeautifulSoup(response.text, 'html.parser')\n#dic = {}\n# article = soup.find('div', {'class': 'vice-\n# '})\n# for i in article:\n#     # lien_div = article.find('div', {'class': 'vice-card-rubric vice-card-rubric--dark vice-card__vice-card-rubric'})\n#     # lien = lien_div.find('a')\n#     paragraphe = i.find('p', {'class': 'vice-card-dek vice-card-dek--dark vice-card__vice-card-dek'})\n#     titre = i.find('h3')\n#     #dic['lien'] = \"https://www.vice.com/fr\" + lien['href']",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "#dic",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "#dic = {}\n# article = soup.find('div', {'class': 'vice-\n# '})\n# for i in article:\n#     # lien_div = article.find('div', {'class': 'vice-card-rubric vice-card-rubric--dark vice-card__vice-card-rubric'})\n#     # lien = lien_div.find('a')\n#     paragraphe = i.find('p', {'class': 'vice-card-dek vice-card-dek--dark vice-card__vice-card-dek'})\n#     titre = i.find('h3')\n#     #dic['lien'] = \"https://www.vice.com/fr\" + lien['href']\n#     dic['paragraphe'] = paragraphe",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "response",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "response = requests.get(url)\nif response.ok:\n    soup = BeautifulSoup(response.text, 'html.parser')\n    football = soup.find('div',{'class':'wfb-news-list-home'})\n    foots = football.find('div',{'class':'module module-newmon module-newmon-default'})\n    for i in range(1, 11):\n        item = foots.findAll('div',{'class': f'item item_{i}'})\n        #lien =  item.find('div',{'class': 'module-newmon-content'})\n        for item_ in item:\n            link = item_.find('a')",
+        "detail": "main",
+        "documentation": {}
+    }
+]
